@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+:root {
+    --shadow: rgba(0, 0, 0, 0.347);
+    --cow: white;
+
+    --color0: #0D0D0D;
+    --color1: #00010D;
+    --color2: #734916;
+    --color2b: #945b16;
+    --color3: #A6855D;
+    --color3b: #c5a176;
+    --color4: #F2CA99;
+}
+
+@media screen and (min-width: 630px) and (max-width: 880px) {
+    body {
+        background-image: linear-gradient(330deg, var(--color2b), var(--color3));
+    }
+
+    h1 {
+        width: 90vw;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    section {
+        width: 70vw;
+    }
+    #iemail {
+        width: 60%;
+        height: 40px;
+        font-size: 20px;
+        text-indent: 10px;
+
+        border-radius: 3px;
+    }
+    #isenha {
+        width: 60%;
+        height: 40px;
+        font-size: 20px;
+        text-indent: 10px;
+
+        border-radius: 3px;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--color2), var(--color3));
+    }
+
+    h1 {
+        width: 100vw;
+    }
+
+    main {
+        width: 98vw;
+        height: 73vh;
+    }
+
+    section {
+        width: 90vw;
+        height: 45vh;
+
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #isenha {
+        width: 700px;
+        height: 60px;
+        font-size: 20px;
+        text-indent: 10px;
+
+        border-radius: 5px;
+    }
+    #iemail {
+        width: 700px;
+        height: 60px;
+        font-size: 20px;
+        text-indent: 10px;
+
+        border-radius: 5px;
+    }
+}

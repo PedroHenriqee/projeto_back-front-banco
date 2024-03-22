@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>back_front_banco</title>
+    <link rel="stylesheet" href="estilos/all.css">
+    <link rel="stylesheet" href="estilos/generic.css">
+</head>
+
+<body>
+    <h1>tela de login <br> com <br> banco de dados</h1>
+    <main>
+        <form action="" autocomplete="on" method="get">
+            <section>
+                <div class="inp">
+                    <label for="iemail">EMAIL*</label>
+                    <input type="email" name="email" id="iemail" class="input" autocomplete="email" required
+                        placeholder="email">
+                </div>
+                <div class="inp">
+                    <label for="isenha">SENHA*</label>
+                    <input type="password" name="senha" id="isenha" class="input" autocomplete="new-password" required
+                        placeholder="senha">
+                    <span>
+                        <div id="botao" onclick="clique()">
+                        <img src="../imagens/visivel.png" alt="senha" id="olho">
+                        </div>
+                    </span>
+                </div>
+            </section>
+            <div class="sub">
+                <input type="submit" value="cadastrar" id="mit">
+                <a href="login.html" id="lk">ja tenho conta</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>
+            site criado por mim &copy;
+        </p>
+    </footer>
+
+    <script>
+        function clique() {
+            if (isenha.type == 'password') {
+                isenha.type = 'text'
+            } else {
+                isenha.type = 'password'
+            }
+            if (isenha.type == 'password') {
+                olho.src = "../imagens/visivel.png"
+            } else {
+                olho.src = "../imagens/olho.png"
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+:root {
+    --shadow: rgba(0, 0, 0, 0.347);
+    --cow: white;
+
+    --color0: #0D0D0D;
+    --color1: #00010D;
+    --color2: #734916;
+    --color2b: #945b16;
+    --color3: #A6855D;
+    --color3b: #c5a176;
+    --color4: #F2CA99;
+}
+
+body {
+    background-color: var(--color3);
+    height: 100vh;
+}
+
+h1 {
+    width: 300px;
+
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: var(--color2);
+
+    text-align: center;
+
+    box-shadow: 0px 0px 5px var(--shadow);
+    text-shadow: 0px 0px 7px var(--shadow);
+    border-radius: 0px 0px 2px 2px;
+}
+
+main {
+    width: 85vw;
+    height: 70vh;
+
+    margin: auto;
+    padding: 10px;
+
+    background-color: var(--color1);
+    box-shadow: 0px 0px 5px var(--shadow);
+    border-radius: 15px 5px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+section {
+    background-color: var(--color0);
+    padding: 20px;
+    margin-top: 40px;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.inp {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    border: 0px;
+
+    height: 30px;
+}
+
+#iemail {
+    margin-left: 16px;
+    font-size: 17px;
+    text-indent: 5px;
+
+}
+
+#isenha {
+    margin-left: 10px;
+    font-size: 17px;
+    text-indent: 5px;
+}
+
+#botao {
+    width: 40px;
+    height: 30px;
+
+    border-left: 1px solid rgba(0, 0, 0, 0.448);
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    text-align: center;
+}
+
+#botao>img {
+    width: 30px;
+}
+
+.inp {
+    padding: 15px;
+    color: var(--cow);
+}
+
+.sub {
+    display: flex;
+    margin-top: 30px;
+
+    justify-content: center;
+    gap: 20px;
+}
+
+#mit {
+    width: 85px;
+
+    border: 0px;
+    border-radius: 5px;
+    background-color: var(--color3);
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#mit:hover {
+    background-color: var(--color3b);
+}
+
+#lk {
+    color: var(--color4);
+    background-color: var(--color2);
+    padding: 15px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#lk:hover {
+    background-color: var(--color2b);
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+
+    text-shadow: .5px .5px 5px var(--shadow);
+}
