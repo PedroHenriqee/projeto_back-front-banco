@@ -12,7 +12,7 @@
 <body>
     <h1>tela de login <br> com <br> banco de dados</h1>
     <main>
-        <form action="" autocomplete="on" method="get">
+        <form id="registerForm" action="../js/scripts.js" autocomplete="on" method="post">
             <section>
                 <div class="inp">
                     <label for="iemail">EMAIL*</label>
@@ -42,20 +42,26 @@
         </p>
     </footer>
 
+    <script src="../js/scripts.js"></script>
     <script>
-        function clique() {
-            if (isenha.type == 'password') {
-                isenha.type = 'text'
-            } else {
-                isenha.type = 'password'
-            }
-            if (isenha.type == 'password') {
-                olho.src = "../imagens/visivel.png"
-            } else {
-                olho.src = "../imagens/olho.png"
-            }
-        }
-    </script>
+        document.getElementById('registerForm').onsubmit = async (e) => {
+          e.preventDefault();
+          const email = document.getElementById('email').value;
+          const senha = document.getElementById('senha').value;
+        
+          const response = await fetch('/register', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, senha }),
+          });
+        
+          const data = await response.json();
+          console.log(data);
+          alert('Usuário registrado com sucesso!');
+        };
+        </script>        
 </body>
 
 </html>
